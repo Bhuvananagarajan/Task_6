@@ -39,7 +39,7 @@ A beautiful and modern Contact Us form built using **HTML**, **CSS**, and **Java
 - 🧹 **Clear/Delete Support** — Easily manage each user’s entry
 
 ---
-##Screenshots
+**Screenshots**
 
 ![image](https://github.com/user-attachments/assets/69c1ee19-6b93-4ddf-bdf7-2e979c980168)
 ![image](https://github.com/user-attachments/assets/b4477d9b-bc89-4033-8e9b-202835454680)

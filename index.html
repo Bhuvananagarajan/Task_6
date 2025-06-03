@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-blur">
+    <div class="glass-card">
+      <form id="contactForm">
+        <h2>✨ Contact Us</h2>
+
+        <input type="text" id="name" placeholder="Full Name" />
+        <small id="nameError" class="error"></small>
+
+        <input type="email" id="email" placeholder="Email Address" />
+        <small id="emailError" class="error"></small>
+
+        <input type="text" id="phone" placeholder="Phone Number" />
+        <small id="phoneError" class="error"></small>
+
+        <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+        <small id="messageError" class="error"></small>
+
+        <button type="submit">Send 🚀</button>
+        <p id="successMessage" class="success"></p>
+      </form>
+
+      <div class="submissions">
+        <h3>📋 Submitted Entries</h3>
+        <table id="submittedTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Message</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

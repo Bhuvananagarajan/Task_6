@@ -1,0 +1,139 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Background styling */
+.background-blur {
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  padding: 2rem;
+}
+
+/* Glass card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  color: white;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #2f1919;
+}
+
+input, textarea {
+  background: rgba(255, 255, 255, 0.3); /* Increased opacity */
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;
+  transition: background 0.3s, border 0.3s;
+  backdrop-filter: blur(4px);
+}
+input:focus,
+textarea:focus {
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid #00bcd4;
+  outline: none;
+  color: #110e0e;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background-color: #00bcd4;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #008c9e;
+}
+
+/* Error and success */
+.error {
+  color: #dc2f2f;
+  font-size: 1.0rem;
+  margin-bottom: 0.5rem;
+}
+
+.success {
+  color: #225725;
+  margin-top: 0.5rem;
+}
+
+/* Submissions */
+.submissions {
+  overflow-x: auto;
+}
+
+.submissions h3 {
+  margin-bottom: 1rem;
+  color: #190e0e;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: #0f0e0e;
+}
+
+th {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .glass-card {
+    grid-template-columns: 1fr;
+  }
+}
+input::placeholder,
+textarea::placeholder {
+  color: #0f0e0e;
+}
